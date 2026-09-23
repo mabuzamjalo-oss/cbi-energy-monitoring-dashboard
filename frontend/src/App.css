@@ -574,3 +574,212 @@ h2 {
     font-size: 12px;
   }
 }
+
+/* =========================================
+   HISTORICAL ANALYSIS CONTROLS
+========================================= */
+
+.history-controls {
+  display: flex;
+  gap: 8px;
+  background: #f1f5f9;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.history-button {
+  border: none;
+  background: transparent;
+  color: #64748b;
+  padding: 9px 14px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.history-button:hover {
+  background: #e2e8f0;
+  color: #172033;
+}
+
+.history-button.active {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+}
+
+.history-period-label {
+  margin: 12px 0;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .history-controls {
+    width: 100%;
+  }
+
+  .history-button {
+    flex: 1;
+  }
+}
+
+/* =========================================
+   HISTORICAL PERIOD CONTROLS
+========================================= */
+
+.history-controls {
+  display: flex;
+  gap: 8px;
+  background: #f1f5f9;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.history-button {
+  border: none;
+  background: transparent;
+  color: #64748b;
+  padding: 9px 14px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.history-button:hover {
+  background: #e2e8f0;
+  color: #172033;
+}
+
+.history-button.active {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+}
+
+.history-period-label {
+  margin: 12px 0;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   HISTORICAL ANALYTICS CARDS
+========================================= */
+
+.historical-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 18px 0 22px;
+}
+
+.historical-summary-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.historical-summary-card span {
+  display: block;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.historical-summary-card strong {
+  display: block;
+  color: #172033;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.historical-summary-card strong small {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.historical-summary-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVE HISTORICAL SECTION
+========================================= */
+
+@media (max-width: 1000px) {
+  .historical-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .history-controls {
+    width: 100%;
+  }
+
+  .history-button {
+    flex: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .historical-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   HISTORICAL HOUSEHOLD FILTER
+========================================= */
+
+.household-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 8px;
+}
+
+.household-filter-label {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.household-filter-button {
+  border: 1px solid #dbe3ee;
+  background: #ffffff;
+  color: #64748b;
+  padding: 8px 13px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.household-filter-button:hover {
+  background: #f1f5f9;
+  color: #172033;
+}
+
+.household-filter-button.active {
+  background: #172033;
+  color: #ffffff;
+  border-color: #172033;
+}

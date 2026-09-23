@@ -311,8 +311,8 @@ def register_routes(app):
         if limit < 1:
             limit = 1
 
-        if limit > 1000:
-            limit = 1000
+        if limit > 5000:
+            limit = 5000
 
 
         query = Reading.query.join(
