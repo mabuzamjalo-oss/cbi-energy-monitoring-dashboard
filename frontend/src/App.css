@@ -1,0 +1,576 @@
+
+/* =========================================
+   GLOBAL STYLES
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+.dashboard {
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #e3e8ef;
+  padding: 25px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 4px 0 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #667085;
+}
+
+.status {
+  background: #eaf8ef;
+  color: #067647;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+main {
+  width: 86%;
+  max-width: 1300px;
+  margin: 40px auto;
+}
+
+h2 {
+  margin: 0 0 6px;
+  font-size: 23px;
+}
+
+.section-description {
+  margin: 0;
+  color: #667085;
+  line-height: 1.5;
+}
+
+/* =========================================
+   COMMUNITY OVERVIEW
+========================================= */
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.summary-card {
+  background: #ffffff;
+  border: 1px solid #e3e8ef;
+  border-radius: 12px;
+  padding: 22px;
+  min-height: 130px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.summary-card span {
+  display: block;
+  color: #667085;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.summary-card strong {
+  display: block;
+  font-size: 26px;
+  color: #172033;
+}
+
+.summary-card strong small {
+  font-size: 15px;
+  color: #667085;
+}
+
+.summary-card p {
+  margin: 8px 0 0;
+  color: #667085;
+}
+
+/* =========================================
+   HOUSEHOLD MONITORING
+========================================= */
+
+.household-section {
+  margin-top: 45px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 25px;
+}
+
+.energy-card {
+  background: #ffffff;
+  border: 1px solid #e3e8ef;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-heading h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-heading span {
+  font-size: 12px;
+  padding: 5px 9px;
+  background: #eaf8ef;
+  color: #067647;
+  border-radius: 15px;
+}
+
+.energy-value {
+  margin-top: 28px;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.energy-value small {
+  font-size: 18px;
+  color: #667085;
+}
+
+.energy-card > p {
+  color: #667085;
+  font-size: 14px;
+}
+
+/* =========================================
+   HOUSEHOLD COMPARISON
+========================================= */
+
+.comparison {
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comparison strong {
+  font-size: 16px;
+}
+
+.comparison span {
+  font-size: 13px;
+}
+
+.comparison.above {
+  background: #fff4e5;
+  color: #9a6700;
+}
+
+.comparison.below {
+  background: #eaf8ef;
+  color: #067647;
+}
+
+.card-footer {
+  border-top: 1px solid #eeeeee;
+  padding-top: 18px;
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-footer span {
+  color: #667085;
+}
+
+/* =========================================
+   HISTORICAL GRAPH
+========================================= */
+
+.chart-section {
+  margin-top: 45px;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.chart-badge {
+  background: #eef4ff;
+  color: #3538cd;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.chart-card {
+  margin-top: 22px;
+  width: 100%;
+  min-height: 420px;
+  background: #ffffff;
+  border: 1px solid #e3e8ef;
+  border-radius: 12px;
+  padding: 25px 20px 15px 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+/* =========================================
+   COMMUNITY INSIGHT
+========================================= */
+
+.insight-section {
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+.insight-card {
+  background: #ffffff;
+  border: 1px solid #e3e8ef;
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.insight-icon {
+  font-size: 28px;
+}
+
+.insight-card strong {
+  font-size: 16px;
+}
+
+.insight-card p {
+  margin: 8px 0 0;
+  color: #667085;
+  line-height: 1.6;
+}
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+.error {
+  color: #b42318;
+  background: #fef3f2;
+  border: 1px solid #fecdca;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1000px) {
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 92%;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-header {
+    flex-direction: column;
+  }
+
+  .energy-value {
+    font-size: 32px;
+  }
+}
+
+
+/* =========================================
+   FLASHCARD CONTAINER
+========================================= */
+
+.flashcard-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  perspective: 1200px;
+}
+
+/* =========================================
+   FLASHCARD
+========================================= */
+
+.flashcard {
+  width: 100%;
+  max-width: 550px;
+  height: 430px;
+  cursor: pointer;
+  perspective: 1200px;
+}
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.65s ease;
+  transform-style: preserve-3d;
+}
+
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+/* =========================================
+   FRONT AND BACK
+========================================= */
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e3e8ef;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  overflow-y: auto;
+}
+
+.flashcard-front {
+  border-top: 5px solid #2563eb;
+}
+
+.flashcard-back {
+  transform: rotateY(180deg);
+  border-top: 5px solid #16a34a;
+  justify-content: center;
+}
+
+/* =========================================
+   FLASHCARD CONTENT
+========================================= */
+
+.flashcard-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #64748b;
+}
+
+.flashcard h3 {
+  font-size: 28px;
+  margin: 18px 0 12px;
+  color: #172033;
+}
+
+.flashcard h4 {
+  font-size: 18px;
+  margin: 18px 0;
+  color: #334155;
+}
+
+.flashcard-priority {
+  background: #eef4ff;
+  color: #2563eb;
+  border-radius: 20px;
+  padding: 7px 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* =========================================
+   ENERGY STATISTICS
+========================================= */
+
+.flashcard-stat {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #edf2f7;
+  gap: 12px;
+}
+
+.flashcard-stat span {
+  color: #667085;
+  font-size: 14px;
+}
+
+.flashcard-stat strong {
+  color: #172033;
+  font-size: 15px;
+}
+
+/* =========================================
+   RECOMMENDATION SIDE
+========================================= */
+
+.flashcard-advice {
+  margin-top: 20px;
+}
+
+.advice-icon {
+  font-size: 40px;
+}
+
+.flashcard-advice h4 {
+  font-size: 19px;
+  margin: 15px 0;
+}
+
+.flashcard-advice p {
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   FLIP HINT
+========================================= */
+
+.flip-hint {
+  margin-top: auto;
+  padding-top: 20px;
+  font-size: 12px;
+  color: #2563eb;
+}
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.flashcard-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.flashcard-nav-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.flashcard-nav-button:hover {
+  background: #1d4ed8;
+}
+
+.flashcard-counter {
+  color: #475569;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 600px) {
+  .flashcard {
+    height: 480px;
+  }
+
+  .flashcard-front,
+  .flashcard-back {
+    padding: 22px;
+  }
+
+  .flashcard-navigation {
+    gap: 10px;
+  }
+
+  .flashcard-nav-button {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .flashcard-counter {
+    font-size: 12px;
+  }
+}
